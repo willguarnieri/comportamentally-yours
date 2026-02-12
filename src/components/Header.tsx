@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/logo.png";
 
 const navItems = [
   { label: "Início", href: "#inicio" },
@@ -15,12 +16,11 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#inicio" className="font-display text-xl font-semibold text-foreground">
-          Psicóloga <span className="text-primary">ABA</span>
+      <div className="container mx-auto px-6 py-3 flex items-center justify-between">
+        <a href="#inicio" className="flex items-center">
+          <img src={logo} alt="Isabella Fava - Psicóloga" className="h-12" />
         </a>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <a
@@ -40,13 +40,11 @@ const Header = () => {
           Agendar Consulta
         </a>
 
-        {/* Mobile toggle */}
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-foreground">
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
