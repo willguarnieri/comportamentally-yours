@@ -77,7 +77,7 @@ const AboutSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
-                className="p-6 rounded-xl bg-card border border-border hover:shadow-lg transition-shadow"
+                className="p-6 rounded-xl bg-card border border-border hover:shadow-lg hover:border-primary/30 transition-all"
               >
                 <item.icon className="w-8 h-8 text-primary mb-3" />
                 <h3 className="font-display font-semibold text-foreground mb-1">

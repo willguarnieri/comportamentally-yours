@@ -29,7 +29,7 @@ const ContactSection = () => {
 
             <div className="space-y-5">
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-lg bg-sage-light flex items-center justify-center">
+                <div className="w-10 h-10 rounded-lg bg-lilac-light flex items-center justify-center">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <div>
@@ -38,7 +38,7 @@ const ContactSection = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-lg bg-sage-light flex items-center justify-center">
+                <div className="w-10 h-10 rounded-lg bg-lilac-light flex items-center justify-center">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <div>
@@ -47,7 +47,7 @@ const ContactSection = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-lg bg-sage-light flex items-center justify-center">
+                <div className="w-10 h-10 rounded-lg bg-lilac-light flex items-center justify-center">
                   <Instagram className="w-5 h-5 text-primary" />
                 </div>
                 <div>
@@ -56,7 +56,7 @@ const ContactSection = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-lg bg-sage-light flex items-center justify-center">
+                <div className="w-10 h-10 rounded-lg bg-lilac-light flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>

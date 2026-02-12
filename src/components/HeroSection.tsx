@@ -4,10 +4,9 @@ import heroBg from "@/assets/hero-bg.jpg";
 const HeroSection = () => {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0">
         <img src={heroBg} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/50" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10 pt-24">
@@ -16,7 +15,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-primary font-medium text-sm tracking-widest uppercase mb-4"
+            className="text-primary font-display font-medium text-sm tracking-widest uppercase mb-4"
           >
             Psicóloga · Terapeuta ABA · Neuropsicologia
           </motion.p>
@@ -27,9 +26,9 @@ const HeroSection = () => {
             transition={{ delay: 0.4 }}
             className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-foreground mb-6"
           >
-            Transformando vidas
+            Isabella Fava
             <br />
-            <span className="italic text-primary">através da ciência</span>
+            <span className="italic text-primary">CRP 06/205699</span>
           </motion.h1>
 
           <motion.p
@@ -57,7 +56,7 @@ const HeroSection = () => {
             </a>
             <a
               href="#aba"
-              className="px-8 py-3.5 rounded-lg border border-border text-foreground font-medium text-center hover:bg-muted transition-colors"
+              className="px-8 py-3.5 rounded-lg border border-border text-foreground font-medium text-center hover:bg-secondary transition-colors"
             >
               Saiba Mais
             </a>

@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Playfair Display"', 'serif'],
-        body: ['"DM Sans"', 'sans-serif'],
+        display: ['"Poppins"', 'sans-serif'],
+        body: ['"Montserrat"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -51,17 +51,19 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sage: {
-          DEFAULT: "hsl(var(--sage))",
-          light: "hsl(var(--sage-light))",
-          dark: "hsl(var(--sage-dark))",
+        lilac: {
+          DEFAULT: "hsl(var(--lilac))",
+          light: "hsl(var(--lilac-light))",
+          dark: "hsl(var(--lilac-dark))",
         },
-        warm: {
-          DEFAULT: "hsl(var(--warm))",
-          dark: "hsl(var(--warm-dark))",
+        "blue-soft": {
+          DEFAULT: "hsl(var(--blue-soft))",
+          dark: "hsl(var(--blue-soft-dark))",
         },
-        cream: "hsl(var(--cream))",
-        sand: "hsl(var(--sand))",
+        "green-sage": {
+          DEFAULT: "hsl(var(--green-sage))",
+          dark: "hsl(var(--green-sage-dark))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

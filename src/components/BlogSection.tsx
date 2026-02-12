@@ -60,7 +60,7 @@ const BlogSection = () => {
               transition={{ duration: 0.5, delay: 0.2 + i * 0.15 }}
               className="group rounded-xl bg-card border border-border p-6 hover:shadow-lg transition-all cursor-pointer"
             >
-              <span className="inline-block px-3 py-1 rounded-full bg-sage-light text-sage-dark text-xs font-medium mb-4">
+              <span className="inline-block px-3 py-1 rounded-full bg-lilac-light text-lilac-dark text-xs font-medium mb-4">
                 {post.tag}
               </span>
               <h3 className="font-display text-lg font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
