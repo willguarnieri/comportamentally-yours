@@ -1,28 +1,49 @@
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { GraduationCap, Brain, Heart, Award } from "lucide-react";
+import { GraduationCap, Brain, Heart, Award, BookOpen, Users } from "lucide-react";
 
-const credentials = [
+const timeline = [
   {
+    period: "2019 – 2023",
+    title: "Graduação em Psicologia",
+    institution: "Universidade Anhembi Morumbi",
     icon: GraduationCap,
-    title: "Psicóloga",
-    description: "Formação em Psicologia com foco em análise do comportamento",
   },
   {
-    icon: Brain,
-    title: "Terapeuta ABA",
-    description: "Especialista em Análise do Comportamento Aplicada",
+    period: "2022 – 2024",
+    title: "AT Escolar e Clínica · Trainee em Psicologia",
+    institution: "Clínica Avançar",
+    description:
+      "Acompanhamento de crianças com TEA e neurodivergências. Elaboração e aplicação de treinos de habilidades (NET, DTT, AVD e PRT). Gestão de acompanhantes terapêuticos.",
+    icon: Users,
   },
   {
-    icon: Award,
-    title: "Pós-graduanda",
-    description: "Em formação em Neuropsicologia",
+    period: "2024 – 2026",
+    title: "Pós-Graduação em Análise do Comportamento Aplicada (ABA)",
+    institution: "PUC Goiás",
+    icon: BookOpen,
   },
   {
+    period: "2024 – Atual",
+    title: "Psicóloga Clínica · Supervisora ABA",
+    institution: "Clínicas e Particular",
+    description:
+      "Psicoterapia, supervisão ABA, orientação parental, elaboração de PEI e atendimento em ambiente naturalístico. Atuação com crianças, adolescentes e adultos.",
     icon: Heart,
-    title: "Atendimento Humanizado",
-    description: "Prática baseada em evidências com acolhimento",
+  },
+  {
+    period: "2024 – Atual",
+    title: "Voluntária em Psicoterapia",
+    institution: "ONG Obra Assistencial Padre Achilles",
+    description: "Atendimentos em psicoterapia, rastreio de habilidades e avaliações socioemocionais.",
+    icon: Award,
+  },
+  {
+    period: "2026 – 2027",
+    title: "Pós-Graduação em Neuropsicologia",
+    institution: "Faculdade de Medicina – USP (FMUSP)",
+    description: "Formação em Reabilitação Cognitiva.",
+    icon: Brain,
   },
 ];
 
@@ -33,60 +54,72 @@ const AboutSection = () => {
   return (
     <section id="sobre" className="py-24 bg-muted/50">
       <div className="container mx-auto px-6" ref={ref}>
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7 }}
-          >
-            <p className="text-primary font-medium text-sm tracking-widest uppercase mb-3">
-              Sobre Mim
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Compromisso com o seu{" "}
-              <span className="italic text-primary">bem-estar</span>
-            </h2>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Sou psicóloga com especialização em Análise do Comportamento Aplicada (ABA),
-                uma abordagem científica reconhecida mundialmente pela sua eficácia em
-                promover mudanças comportamentais significativas e duradouras.
-              </p>
-              <p>
-                Como terapeuta ABA e pós-graduanda em Neuropsicologia, combino conhecimento
-                científico rigoroso com uma prática acolhedora e individualizada. Cada pessoa
-                é única, e meu objetivo é criar intervenções personalizadas que respeitem as
-                necessidades e potencialidades de cada indivíduo.
-              </p>
-              <p>
-                Acredito que a ciência do comportamento pode transformar vidas, e trabalho
-                todos os dias para tornar isso realidade para meus pacientes e suas famílias.
-              </p>
-            </div>
-          </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7 }}
+          className="text-center max-w-3xl mx-auto mb-16"
+        >
+          <p className="text-primary font-medium text-sm tracking-widest uppercase mb-3">
+            Sobre Mim
+          </p>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+            Minha <span className="italic text-primary">Trajetória</span>
+          </h2>
+          <p className="text-muted-foreground leading-relaxed text-lg">
+            Apaixonada pela singularidade da mente humana. Psicóloga clínica com experiência
+            em análise do comportamento, desenvolvimento infantojuvenil e neurodivergências.
+            Criativa, resolutiva, respeitosa e didática — acredito que todo conhecimento é
+            bem-vindo quando se trata de acolher e cuidar com leveza e ciência.
+          </p>
+        </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="grid grid-cols-2 gap-4"
-          >
-            {credentials.map((item, i) => (
+        <div className="relative max-w-3xl mx-auto">
+          {/* Timeline line */}
+          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-border md:-translate-x-px" />
+
+          {timeline.map((item, i) => {
+            const isLeft = i % 2 === 0;
+            return (
               <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 20 }}
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
-                className="p-6 rounded-xl bg-card border border-border hover:shadow-lg hover:border-primary/30 transition-all"
+                transition={{ duration: 0.5, delay: 0.2 + i * 0.12 }}
+                className={`relative flex items-start mb-10 ${
+                  isLeft ? "md:flex-row" : "md:flex-row-reverse"
+                } flex-row`}
               >
-                <item.icon className="w-8 h-8 text-primary mb-3" />
-                <h3 className="font-display font-semibold text-foreground mb-1">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-muted-foreground">{item.description}</p>
+                {/* Dot */}
+                <div className="absolute left-6 md:left-1/2 w-3 h-3 rounded-full bg-primary -translate-x-1.5 mt-2 z-10" />
+
+                {/* Content */}
+                <div
+                  className={`ml-14 md:ml-0 md:w-1/2 ${
+                    isLeft ? "md:pr-12 md:text-right" : "md:pl-12 md:text-left"
+                  }`}
+                >
+                  <div className="p-5 rounded-xl bg-card border border-border hover:shadow-md transition-shadow">
+                    <div className={`flex items-center gap-2 mb-2 ${isLeft ? "md:justify-end" : ""}`}>
+                      <item.icon className="w-4 h-4 text-primary flex-shrink-0" />
+                      <span className="text-xs font-medium text-primary">{item.period}</span>
+                    </div>
+                    <h3 className="font-display font-semibold text-foreground text-sm mb-1">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs text-muted-foreground font-medium mb-1">
+                      {item.institution}
+                    </p>
+                    {item.description && (
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        {item.description}
+                      </p>
+                    )}
+                  </div>
+                </div>
               </motion.div>
-            ))}
-          </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
