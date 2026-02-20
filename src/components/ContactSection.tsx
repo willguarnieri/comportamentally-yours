@@ -37,31 +37,31 @@ const ContactSection = () => {
             </p>
 
             <div className="space-y-5 mb-8">
-              <a href="https://wa.me/5511959663087" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+              <a href="https://wa.me/5511991485931?text=Ol%C3%A1%20%F0%9F%A4%8D%21%20Fico%20feliz%20que%20tenha%20entrado%20em%20contato.%20Como%20posso%20te%20ajudar%3F" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                 <div className="w-10 h-10 rounded-lg bg-accent/30 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
                   <MessageCircle className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">WhatsApp</p>
-                  <p className="font-medium text-foreground group-hover:text-primary transition-colors">(11) 95966-3087</p>
+                  <p className="font-medium text-foreground group-hover:text-primary transition-colors">(11) 99148-5931</p>
                 </div>
               </a>
-              <a href="tel:+5511959663087" className="flex items-center gap-4 group">
+              <a href="tel:+5511991485931" className="flex items-center gap-4 group">
                 <div className="w-10 h-10 rounded-lg bg-lilac-light flex items-center justify-center group-hover:bg-primary/10 transition-colors">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Telefone</p>
-                  <p className="font-medium text-foreground group-hover:text-primary transition-colors">(11) 95966-3087</p>
+                  <p className="font-medium text-foreground group-hover:text-primary transition-colors">(11) 99148-5931</p>
                 </div>
               </a>
-              <a href="mailto:isabellafava0@gmail.com" className="flex items-center gap-4 group">
+              <a href="mailto:contato@isabellafava.com.br" className="flex items-center gap-4 group">
                 <div className="w-10 h-10 rounded-lg bg-lilac-light flex items-center justify-center group-hover:bg-primary/10 transition-colors">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">E-mail</p>
-                  <p className="font-medium text-foreground group-hover:text-primary transition-colors">isabellafava0@gmail.com</p>
+                  <p className="font-medium text-foreground group-hover:text-primary transition-colors">contato@isabellafava.com.br</p>
                 </div>
               </a>
               <div className="flex items-center gap-4">

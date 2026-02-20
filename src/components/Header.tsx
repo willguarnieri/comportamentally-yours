@@ -65,7 +65,7 @@ const Header = () => {
         </nav>
 
         <a
-          href="https://wa.me/5511959663087?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20atendimento."
+          href="https://wa.me/5511991485931?text=Ol%C3%A1%20%F0%9F%A4%8D%21%20Fico%20feliz%20que%20tenha%20entrado%20em%20contato.%20Como%20posso%20te%20ajudar%3F"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-opacity"
@@ -115,7 +115,7 @@ const Header = () => {
                 )
               )}
               <a
-                href="https://wa.me/5511959663087"
+                href="https://wa.me/5511991485931?text=Ol%C3%A1%20%F0%9F%A4%8D%21%20Fico%20feliz%20que%20tenha%20entrado%20em%20contato.%20Como%20posso%20te%20ajudar%3F"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
