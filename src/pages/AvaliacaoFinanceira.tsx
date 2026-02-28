@@ -76,24 +76,24 @@ const AvaliacaoFinanceira = () => {
     const body = `
 AVALIAÇÃO DE POSSIBILIDADE DE INVESTIMENTO EM PSICOTERAPIA
 
-📋 Dados do paciente:
+Dados do paciente:
 Nome: ${formData.nome}
 E-mail: ${formData.email}
 Telefone: ${formData.telefone}
 
-🧾 Situação profissional: ${formData.situacaoProfissional === "Outro" ? formData.situacaoProfissionalOutro : formData.situacaoProfissional}
+1. Situação profissional: ${formData.situacaoProfissional === "Outro" ? formData.situacaoProfissionalOutro : formData.situacaoProfissional}
 
-💰 Faixa de renda mensal: ${formData.faixaRenda}
+2. Faixa de renda mensal: ${formData.faixaRenda}
 
-👨‍👩‍👧 Dependentes financeiros: ${formData.dependentes}
+3. Dependentes financeiros: ${formData.dependentes}
 
-🏠 Despesas fixas: ${formData.despesas.join(", ")}${formData.despesasOutro ? `, ${formData.despesasOutro}` : ""}
+4. Despesas fixas: ${formData.despesas.join(", ")}${formData.despesasOutro ? `, ${formData.despesasOutro}` : ""}
 
-💳 Situação financeira atual: ${formData.situacaoFinanceira}
+5. Situação financeira atual: ${formData.situacaoFinanceira}
 
-🧠 Valor mensal para psicoterapia: R$ ${formData.valorInvestimento}
+6. Valor mensal para psicoterapia: R$ ${formData.valorInvestimento}
 
-❤️ Observações: ${formData.observacoes || "Nenhuma"}
+7. Observações: ${formData.observacoes || "Nenhuma"}
     `.trim();
 
     const mailtoLink = `mailto:contato@isabellafava.com.br?subject=${encodeURIComponent("Avaliação de Investimento em Psicoterapia - " + formData.nome)}&body=${encodeURIComponent(body)}`;
@@ -118,7 +118,7 @@ Telefone: ${formData.telefone}
               Formulário enviado com sucesso!
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Obrigada por compartilhar essas informações 🤍 Elas serão utilizadas de forma
+              Obrigada por compartilhar essas informações. Elas serão utilizadas de forma
               confidencial para que possamos definir, juntos, um valor justo e acessível
               para o seu acompanhamento.
             </p>
@@ -206,7 +206,7 @@ Telefone: ${formData.telefone}
               {/* 1. Situação profissional */}
               <div className="p-6 rounded-xl bg-card border border-border space-y-3">
                 <h2 className="font-display text-lg font-semibold text-foreground">
-                  🧾 1. Situação Profissional
+                  1. Situação Profissional
                 </h2>
                 <div className="space-y-2">
                   {situacoesProfissionais.map((s) => (
@@ -246,7 +246,7 @@ Telefone: ${formData.telefone}
               {/* 2. Faixa de renda */}
               <div className="p-6 rounded-xl bg-card border border-border space-y-3">
                 <h2 className="font-display text-lg font-semibold text-foreground">
-                  💰 2. Faixa de Renda Mensal Individual
+                  2. Faixa de Renda Mensal Individual
                 </h2>
                 <div className="space-y-2">
                   {faixasRenda.map((f) => (
@@ -267,7 +267,7 @@ Telefone: ${formData.telefone}
               {/* 3. Dependentes */}
               <div className="p-6 rounded-xl bg-card border border-border space-y-3">
                 <h2 className="font-display text-lg font-semibold text-foreground">
-                  👨‍👩‍👧 3. Dependentes Financeiros
+                  3. Dependentes Financeiros
                 </h2>
                 <div>
                   <label className="text-sm text-muted-foreground mb-1 block">
@@ -287,7 +287,7 @@ Telefone: ${formData.telefone}
               {/* 4. Despesas fixas */}
               <div className="p-6 rounded-xl bg-card border border-border space-y-3">
                 <h2 className="font-display text-lg font-semibold text-foreground">
-                  🏠 4. Principais Despesas Fixas
+                  4. Principais Despesas Fixas
                 </h2>
                 <p className="text-sm text-muted-foreground">Marque as que se aplicam:</p>
                 <div className="space-y-2">
@@ -318,7 +318,7 @@ Telefone: ${formData.telefone}
               {/* 5. Autoavaliação */}
               <div className="p-6 rounded-xl bg-card border border-border space-y-3">
                 <h2 className="font-display text-lg font-semibold text-foreground">
-                  💳 5. Situação Financeira Atual
+                  5. Situação Financeira Atual
                 </h2>
                 <p className="text-sm text-muted-foreground">Como você descreve sua situação financeira hoje?</p>
                 <div className="space-y-2">
@@ -340,7 +340,7 @@ Telefone: ${formData.telefone}
               {/* 6. Valor investimento */}
               <div className="p-6 rounded-xl bg-card border border-border space-y-3">
                 <h2 className="font-display text-lg font-semibold text-foreground">
-                  🧠 6. Expectativa de Investimento
+                  6. Expectativa de Investimento
                 </h2>
                 <p className="text-sm text-muted-foreground">
                   Qual valor mensal você acredita conseguir investir em psicoterapia atualmente?
@@ -361,7 +361,7 @@ Telefone: ${formData.telefone}
               {/* 7. Observações */}
               <div className="p-6 rounded-xl bg-card border border-border space-y-3">
                 <h2 className="font-display text-lg font-semibold text-foreground">
-                  ❤️ 7. Informações Adicionais (opcional)
+                  7. Informações Adicionais (opcional)
                 </h2>
                 <p className="text-sm text-muted-foreground">
                   Existe alguma informação sobre sua situação financeira que considera importante compartilhar?

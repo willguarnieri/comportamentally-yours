@@ -73,10 +73,11 @@ const AboutSection = () => {
             bem-vindo quando se trata de acolher e cuidar com leveza e ciência.
           </p>
           <p className="text-muted-foreground leading-relaxed text-lg mb-4">
-            Trabalho com ABA há 4 anos. Entrei nessa área porque tenho um irmão autista e
-            sempre quis entender como funcionavam as terapias dele. Essa vivência pessoal me
-            trouxe uma conexão genuína com a neurodivergência — é uma área que tem um valor
-            muito especial para mim.
+            Atuo na área de ABA há 4 anos. Meu interesse pela prática surgiu a partir de uma
+            experiência pessoal, ao acompanhar o processo terapêutico de um familiar autista, o
+            que motivou o aprofundamento no estudo da neurodivergência. Desde então, desenvolvi
+            uma forte identificação com essa área, que ocupa um lugar central na minha atuação
+            profissional.
           </p>
           <p className="text-muted-foreground leading-relaxed text-lg">
             Atendimento para crianças, adolescentes e adultos, sempre com base em evidências

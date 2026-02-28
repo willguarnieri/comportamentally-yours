@@ -9,7 +9,7 @@ const navItems = [
   { label: "Sobre Mim", href: "/#sobre" },
   { label: "Serviços", href: "/#servicos" },
   { label: "Blog", href: "/#blog" },
-  { label: "Anamnese", href: "/anamnese" },
+  { label: "Perguntas Frequentes", href: "/perguntas-frequentes" },
   { label: "Avaliação Financeira", href: "/avaliacao-financeira" },
   { label: "Contato", href: "/#contato" },
 ];
