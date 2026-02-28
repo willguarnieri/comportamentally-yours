@@ -1,13 +1,13 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Heart, Users, Brain, Handshake, GraduationCap } from "lucide-react";
+import { Heart, Handshake, Brain, Users, GraduationCap } from "lucide-react";
 
 const services = [
   {
     icon: Heart,
     title: "Psicoterapia Individual",
     description:
-      "Atendimento para crianças, adolescentes e adultos até a meia-idade. Um espaço de escuta, desenvolvimento emocional e manejo de dificuldades do dia a dia.",
+      "Atendimento para crianças, adolescentes e adultos. Um espaço de escuta, desenvolvimento emocional e manejo de dificuldades do dia a dia.",
     color: "bg-lilac-light text-lilac-dark",
   },
   {
@@ -19,24 +19,10 @@ const services = [
   },
   {
     icon: Brain,
-    title: "Atendimento ABA",
+    title: "Atendimento ABA, Orientação Parental e Supervisão ABA",
     description:
-      "Intervenção baseada em Análise do Comportamento Aplicada. Desenvolvimento de habilidades, autonomia e regulação comportamental em ambiente naturalístico e individualizado.",
+      "Intervenção baseada em Análise do Comportamento Aplicada: desenvolvimento de habilidades, autonomia e regulação comportamental em ambiente naturalístico e individualizado. Inclui orientação parental com estratégias baseadas em ciência comportamental, e supervisão técnica para profissionais e acompanhantes terapêuticos, com elaboração e acompanhamento de PEI e discussão de casos.",
     color: "bg-accent/30 text-green-sage-dark",
-  },
-  {
-    icon: Users,
-    title: "Orientação Parental",
-    description:
-      "Apoio prático para famílias com estratégias baseadas em ciência comportamental. Fortalecimento do vínculo e manejo de desafios do desenvolvimento.",
-    color: "bg-lilac-light text-lilac-dark",
-  },
-  {
-    icon: GraduationCap,
-    title: "Supervisão ABA",
-    description:
-      "Supervisão técnica para profissionais e acompanhantes terapêuticos. Elaboração e acompanhamento de PEI, discussão de casos e orientação clínica.",
-    color: "bg-secondary/30 text-blue-soft-dark",
   },
 ];
 
@@ -61,7 +47,7 @@ const ServicesSection = () => {
             <span className="italic text-primary">Atendimento</span>
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Os atendimentos são realizados com crianças, adolescentes e adultos até a meia-idade,
+            Os atendimentos são realizados com crianças, adolescentes e adultos,
             sempre com base em evidências científicas e respeito à singularidade de cada pessoa.
           </p>
         </motion.div>
@@ -97,7 +83,7 @@ const ServicesSection = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://wa.me/5511959663087?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos."
+            href="https://wa.me/5511991485931?text=Ol%C3%A1%20%F0%9F%A4%8D%21%20Fico%20feliz%20que%20tenha%20entrado%20em%20contato.%20Como%20posso%20te%20ajudar%3F"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex px-8 py-3.5 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"

@@ -51,7 +51,7 @@ const HeroSection = () => {
           >
             Psicóloga clínica com pós-graduação em Análise do Comportamento Aplicada (ABA) e
             formação em Neuropsicologia e Reabilitação Cognitiva. Atendimento para crianças,
-            adolescentes e adultos até a meia-idade.
+            adolescentes e adultos.
           </motion.p>
 
           <motion.div
@@ -77,11 +77,11 @@ const HeroSection = () => {
               Entrar em Contato
             </a>
             <a
-              href="/anamnese"
+              href="/avaliacao-financeira"
               className="px-6 py-3.5 rounded-lg border border-primary/30 text-primary font-medium text-center hover:bg-lilac-light transition-colors flex items-center justify-center gap-2"
             >
               <ClipboardList className="w-4 h-4" />
-              Preencher Anamnese
+              Avaliação Financeira
             </a>
           </motion.div>
         </div>
