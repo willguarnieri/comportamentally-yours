@@ -21,6 +21,7 @@ const Footer = () => {
             <a href="/#sobre" className="hover:text-primary transition-colors">Sobre</a>
             <a href="/#servicos" className="hover:text-primary transition-colors">Serviços</a>
             <Link to="/anamnese" className="hover:text-primary transition-colors">Anamnese</Link>
+            <Link to="/avaliacao-financeira" className="hover:text-primary transition-colors">Avaliação</Link>
             <a href="/#contato" className="hover:text-primary transition-colors">Contato</a>
           </div>
           <p className="text-xs text-muted-foreground">

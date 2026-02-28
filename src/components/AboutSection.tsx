@@ -66,11 +66,21 @@ const AboutSection = () => {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
             Minha <span className="italic text-primary">Trajetória</span>
           </h2>
-          <p className="text-muted-foreground leading-relaxed text-lg">
+          <p className="text-muted-foreground leading-relaxed text-lg mb-4">
             Apaixonada pela singularidade da mente humana. Psicóloga clínica com experiência
             em análise do comportamento, desenvolvimento infantojuvenil e neurodivergências.
             Criativa, resolutiva, respeitosa e didática — acredito que todo conhecimento é
             bem-vindo quando se trata de acolher e cuidar com leveza e ciência.
+          </p>
+          <p className="text-muted-foreground leading-relaxed text-lg mb-4">
+            Trabalho com ABA há 4 anos. Entrei nessa área porque tenho um irmão autista e
+            sempre quis entender como funcionavam as terapias dele. Essa vivência pessoal me
+            trouxe uma conexão genuína com a neurodivergência — é uma área que tem um valor
+            muito especial para mim.
+          </p>
+          <p className="text-muted-foreground leading-relaxed text-lg">
+            Atendimento para crianças, adolescentes e adultos, sempre com base em evidências
+            científicas e respeito à história de cada pessoa.
           </p>
         </motion.div>
 

@@ -10,6 +10,7 @@ const navItems = [
   { label: "Serviços", href: "/#servicos" },
   { label: "Blog", href: "/#blog" },
   { label: "Anamnese", href: "/anamnese" },
+  { label: "Avaliação Financeira", href: "/avaliacao-financeira" },
   { label: "Contato", href: "/#contato" },
 ];
 
