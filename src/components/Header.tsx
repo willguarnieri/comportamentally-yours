@@ -10,7 +10,7 @@ const navItems = [
   { label: "Serviços", href: "/#servicos" },
   { label: "Blog", href: "/#blog" },
   { label: "Perguntas Frequentes", href: "/perguntas-frequentes" },
-  { label: "Avaliação Financeira", href: "/avaliacao-financeira" },
+  { label: "Agendar Atendimento", href: "/agendar" },
   { label: "Contato", href: "/#contato" },
 ];
 
