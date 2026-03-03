@@ -11,7 +11,7 @@ const navItems = [
   { label: "Blog", href: "/#blog" },
   { label: "Perguntas Frequentes", href: "/perguntas-frequentes" },
   { label: "Agendar Atendimento", href: "/agendar" },
-  { label: "Contato", href: "/#contato" },
+  { label: "Solicitar Documento", href: "/#contato" },
 ];
 
 const Header = () => {

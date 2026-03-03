@@ -22,7 +22,7 @@ const Footer = () => {
             <a href="/#servicos" className="hover:text-primary transition-colors">Serviços</a>
             <Link to="/perguntas-frequentes" className="hover:text-primary transition-colors">FAQ</Link>
             <Link to="/agendar" className="hover:text-primary transition-colors">Agendar</Link>
-            <a href="/#contato" className="hover:text-primary transition-colors">Contato</a>
+            <a href="/#contato" className="hover:text-primary transition-colors">Solicitar Documento</a>
           </div>
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} · Todos os direitos reservados

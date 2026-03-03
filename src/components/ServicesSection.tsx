@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Heart, Handshake, Brain, Users, GraduationCap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -82,14 +83,12 @@ const ServicesSection = () => {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="text-center mt-12"
         >
-          <a
-            href="https://wa.me/5511991485931?text=Ol%C3%A1%20%F0%9F%A4%8D%21%20Fico%20feliz%20que%20tenha%20entrado%20em%20contato.%20Como%20posso%20te%20ajudar%3F"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/agendar"
             className="inline-flex px-8 py-3.5 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
           >
             Agendar Atendimento
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

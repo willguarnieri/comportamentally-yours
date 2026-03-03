@@ -93,9 +93,6 @@ const HeroSection = () => {
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-              <div className="absolute -bottom-3 -right-3 bg-card border border-border rounded-xl px-4 py-2 shadow-md">
-                <p className="font-display text-xs font-semibold text-primary">CRP 06/205699</p>
-              </div>
             </div>
           </motion.div>
         </div>
