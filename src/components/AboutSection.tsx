@@ -33,7 +33,7 @@ const timeline = [
   },
   {
     period: "2024 – Atual",
-    title: "Voluntária em Psicoterapia",
+    title: "Prestadora de Serviços em Psicoterapia",
     institution: "ONG Obra Assistencial Padre Achilles",
     description: "Atendimentos em psicoterapia, rastreio de habilidades e avaliações socioemocionais.",
     icon: Award,
