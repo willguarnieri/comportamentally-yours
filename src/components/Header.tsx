@@ -113,15 +113,13 @@ const Header = () => {
                   </a>
                 )
               )}
-              <a
-                href="https://wa.me/5511991485931?text=Ol%C3%A1%20%F0%9F%A4%8D%21%20Fico%20feliz%20que%20tenha%20entrado%20em%20contato.%20Como%20posso%20te%20ajudar%3F"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to="/agendar"
                 onClick={() => setIsOpen(false)}
                 className="px-5 py-2.5 rounded-lg bg-primary text-primary-foreground text-sm font-medium text-center"
               >
                 Agendar Consulta
-              </a>
+              </Link>
             </nav>
           </motion.div>
         )}
