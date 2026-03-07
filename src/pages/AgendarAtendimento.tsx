@@ -8,10 +8,19 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
-const horarios = [
-  "08:00", "09:00", "10:00", "11:00",
-  "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00",
-];
+const getHorariosForDay = (date: Date): string[] => {
+  const day = date.getDay();
+  if (day === 6) {
+    // Sábado: 8h às 15h
+    return ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00"];
+  }
+  if (day === 5) {
+    // Sexta: 8h às 18h
+    return ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00"];
+  }
+  // Segunda a quinta: 8h às 21h
+  return ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00"];
+};
 
 const situacoesProfissionais = [
   "Empregado CLT", "Autônomo / PJ", "Estudante",
@@ -275,7 +284,7 @@ ${slotsText}
                           Horários para {format(currentDate, "dd/MM/yyyy (EEEE)", { locale: ptBR })}:
                         </p>
                         <div className="grid grid-cols-3 gap-2">
-                          {horarios.map((h) => (
+                          {getHorariosForDay(currentDate).map((h) => (
                             <button
                               key={h}
                               type="button"
