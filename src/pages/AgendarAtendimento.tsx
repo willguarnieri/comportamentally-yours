@@ -284,7 +284,7 @@ ${slotsText}
                           Horários para {format(currentDate, "dd/MM/yyyy (EEEE)", { locale: ptBR })}:
                         </p>
                         <div className="grid grid-cols-3 gap-2">
-                          {horarios.map((h) => (
+                          {getHorariosForDay(currentDate).map((h) => (
                             <button
                               key={h}
                               type="button"
