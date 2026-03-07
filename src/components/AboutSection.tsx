@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { GraduationCap, Brain, Heart, Award, BookOpen, Users } from "lucide-react";
+import { GraduationCap, Brain, Heart, Award, BookOpen, Users, Briefcase } from "lucide-react";
 
 const timeline = [
   {
@@ -37,6 +37,14 @@ const timeline = [
     institution: "ONG Obra Assistencial Padre Achilles",
     description: "Atendimentos em psicoterapia, rastreio de habilidades e avaliações socioemocionais.",
     icon: Award,
+  },
+  {
+    period: "2024 – Atual",
+    title: "Psicóloga Organizacional",
+    institution: "Stone Pagamentos",
+    description:
+      "Atuação voltada à prevenção de adoecimento no ambiente de trabalho e na vida pessoal dos colaboradores, em conformidade com as diretrizes da NR-1. Desenvolvimento de ações de saúde mental, gestão de riscos psicossociais e promoção de bem-estar organizacional.",
+    icon: Briefcase,
   },
   {
     period: "2026 – 2027",
