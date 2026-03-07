@@ -40,7 +40,7 @@ const timeline = [
   },
   {
     period: "2024 – Atual",
-    title: "Psicóloga Organizacional",
+    title: "Prestadora de Serviços em Psicoterapia",
     institution: "Stone Pagamentos",
     description:
       "Atuação voltada à prevenção de adoecimento no ambiente de trabalho e na vida pessoal dos colaboradores, em conformidade com as diretrizes da NR-1. Desenvolvimento de ações de saúde mental, gestão de riscos psicossociais e promoção de bem-estar organizacional.",
