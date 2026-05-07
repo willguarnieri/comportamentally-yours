@@ -37,7 +37,7 @@ Também é o momento de esclarecer dúvidas sobre frequência, valores, sigilo e
 
 Psicólogo(a) é o profissional graduado em Psicologia, com registro ativo no Conselho Regional de Psicologia (CRP). Somente psicólogos podem realizar psicoterapia, avaliação psicológica e diagnóstico psicológico.
 
-Terapeuta é um termo mais amplo que pode se referir a profissionais de diversas áreas — como terapeutas ocupacionais, terapeutas holísticos, entre outros. Nem todo terapeuta possui formação em Psicologia.
+Terapeuta é um termo mais amplo que pode se referir a profissionais de diversas áreas — como terapeutas ocupacionais. Nem todo terapeuta possui formação em Psicologia.
 
 Por isso, ao buscar atendimento em saúde mental, é fundamental verificar se o profissional é psicólogo(a) com CRP ativo, garantindo que o atendimento seja realizado por alguém habilitado e regulamentado.`,
   },
